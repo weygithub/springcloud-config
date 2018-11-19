@@ -11,11 +11,11 @@ server:
 spring:
   redis:
     remote: false        #cachecloud 获取
-    host: 10.1.11.131
+    host: 10.1.11.204
     port: 6379
     password: 
   rabbitmq:
-    host: 10.1.11.131
+    host: 10.1.11.204
     port: 5672
     username: pig
     password: lengleng

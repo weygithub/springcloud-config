@@ -61,6 +61,6 @@ ignore:
     - /instructions/**
     - /provider/**
     - /admin/**
-	- /search/**
+    - /search/**
   clients:
     - app 

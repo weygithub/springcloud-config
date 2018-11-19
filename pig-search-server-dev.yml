@@ -5,12 +5,12 @@ spring:
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
 #    url: jdbc:mysql://127.0.0.1:3306/pig
-    url: jdbc:mysql://10.1.11.131:3306/pig?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://10.1.11.204:3306/pig?useUnicode=true&characterEncoding=utf8
     username: root
     password: root
   data: 
     solr: 
-      host: http://10.1.11.131:8983/solr
+      host: http://10.1.11.204:8983/solr
 # sleuth配置
   zipkin: 
     rabbitmq: 

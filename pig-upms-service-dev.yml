@@ -22,7 +22,7 @@ sharding:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: root
-      jdbc-url: jdbc:mysql://10.1.11.131:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      jdbc-url: jdbc:mysql://10.1.11.204:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     datasource:
       names: ds
       ds:
@@ -30,7 +30,7 @@ sharding:
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: root
-        jdbc-url: jdbc:mysql://10.1.11.131:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        jdbc-url: jdbc:mysql://10.1.11.204:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     config:
       sharding:
         tables:
@@ -61,9 +61,9 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: true
 fdfs:
-  file-host: http://10.1.11.131:8888/
+  file-host: http://10.1.11.204:8888/
   tracker-list:
-    - 10.1.11.131:8888
+    - 10.1.11.204:8888
 
 qiniu:
   accessKey: hM2cBDEM0FTYzpXbigRW90kV12NhhzhFM3jCzurJ
