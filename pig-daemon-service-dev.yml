@@ -1,0 +1,13 @@
+server:
+  port: 4060
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+  elasticjob:
+    zookeeper:
+      server-lists: 10.1.11.177:2181
+      namespace: pig-daemon

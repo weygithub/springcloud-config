@@ -1,0 +1,32 @@
+server:
+  port: 8101
+
+spring:
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/pig
+    url: jdbc:mysql://10.1.11.70:3306/pig?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: org.pig.provider.entity  # 注意：对应实体类路径
+  configuration:
+    map-underscore-to-camel-case: true
+
+pigAddress: 
+  json_url: http://10.1.11.70:8787 #车书目录结构json地址（移动端-获取车书目录结构用）
+  indicator_url: /root/pig/dist #指示灯列表json地址（车机端-扩展文件请求用）
+  heat_url: /root/pig/dist #热词列表json地址（车机端-扩展文件请求用）
+
+#配置分页插件pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+logging:
+  level:
+    org.pig.provider.dao : debug
