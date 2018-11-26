@@ -36,8 +36,8 @@ ribbon:
     enabled: false
   OkHttp:
     enabled: true
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
 
 feign:
   hystrix:
@@ -71,7 +71,9 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-
+zuul:
+  semaphore:
+    max-semaphores: 2000
 #监控短点配置
 management:
   security:
