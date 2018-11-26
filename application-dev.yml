@@ -65,6 +65,8 @@ hystrix:
       queueSizeRejectionThreshold: 1600
   command:
     default:
+      circuitBreaker:
+        requestVolumeThreshold: 1000
       execution:
         isolation:
           thread:
