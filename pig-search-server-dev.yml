@@ -1,5 +1,5 @@
-server: 
-  port: 8102
+# server: 
+#   port: 8102
 
 spring: 
   datasource: 
