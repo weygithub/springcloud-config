@@ -8,12 +8,12 @@ server:
     # io-threads: # 设置IO线程数，最小为2，默认是cpu核数
   tomcat:
     max-threads: 1000 # Maximum amount of worker threads.
-    min-spare-threads: 50 # Minimum amount of worker threads
+    min-spare-threads: 500 # Minimum amount of worker threads
 
 spring:
   redis:
     remote: false        #cachecloud 获取
-    host: 10.1.11.204
+    host: 10.1.11.131
     port: 6379
     password: 
   rabbitmq:

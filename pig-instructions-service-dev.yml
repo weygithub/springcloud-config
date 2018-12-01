@@ -23,7 +23,7 @@ sharding:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: root
-      jdbc-url: jdbc:mysql://10.1.11.204:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      jdbc-url: jdbc:mysql://10.1.11.131:3306/pig1?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     datasource:
       names: ds
       ds:
@@ -31,7 +31,7 @@ sharding:
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password: root
-        jdbc-url: jdbc:mysql://10.1.11.204:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+        jdbc-url: jdbc:mysql://10.1.11.131:3306/pig1?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     config:
       sharding:
         tables:
