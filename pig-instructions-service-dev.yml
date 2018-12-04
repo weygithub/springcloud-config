@@ -95,6 +95,7 @@ staticize:
     keepAliveSeconds: 60
     threaNamePrefix: staticizeExecutor-
   htmlOutPath: /data/staticz/
+  urlPrefx: http://10.1.11.204/
   mainTainTemplate: 
     prefx: maintain/
     car: guide-maintian-car.ftl
