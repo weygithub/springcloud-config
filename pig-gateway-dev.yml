@@ -13,7 +13,7 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
-      clients: pig-auth,pig-upms-service,pig-demo-service,pig-motorcycle-service,pig-search-server
+      clients: pig-auth,pig-upms-service,pig-instructions-service,pig-provider,pig-search-server
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
