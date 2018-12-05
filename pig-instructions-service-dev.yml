@@ -1,5 +1,5 @@
-server:
-  port: 5000
+# server:
+  # port: 5000
 #  max-http-post-size: 0
 #Redis cache 过期时间设置
 redis:
